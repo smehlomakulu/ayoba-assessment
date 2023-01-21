@@ -1,4 +1,4 @@
-module.exports = (sequelize, Sequelize) => {
+module.exports = function(sequelize, Sequelize) {
   const Track = sequelize.define("Track", {
     title: {
       type: Sequelize.STRING
