@@ -1,6 +1,6 @@
-const Track = require("../models/track.model.js");
-const Playlist = require("../models/playlist.model.js");
-const TrackPlaylist = require("../models/playlist.model.js");
+const Track = require("../models/track.model").Track;
+const Playlist = require("../models/playlist.model").Playlist;
+const TrackPlaylist = require("../models/playlist.model").TrackPlaylist;
 
 module.exports = {
 
@@ -92,7 +92,7 @@ module.exports = {
     },
 
     addTrackToPlaylist(req, res) {
-        return TrackPlaylist.create(req.params.playlist_id,req.params.track_id)
+        return TrackPlaylist.create(req.body.playlist_id,req.body.track_id)
                             .then((trackPlaylist) => res.status(201).send(trackPlaylist))
                             .catch((error) => res.status(400).send(error));
     }

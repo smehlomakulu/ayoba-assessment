@@ -76,6 +76,14 @@ b) Playlist
   
   4. Update a playlist: /playlist/:id
   HTTP Verb: PUT
+
+  5. Add Track to Playlist: /playlist/addTrack
+  request:
+  {
+     "playlist_id":" ",
+     "track_id": " "
+  }
+  HTTP Verb: POST
   
   5.  Delete a track: /tracks/:id
   HTTP Verb: DELETE

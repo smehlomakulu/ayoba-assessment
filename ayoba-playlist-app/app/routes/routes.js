@@ -16,6 +16,9 @@ module.exports = app => {
   // Update a Playlist with id
   router.put("/playlist/:id", playlist.updatePlaylist);
 
+  // Add Track to Playlist
+  router.post("/playlist/addTrack", playlist.addTrackToPlaylist);
+
   // Delete a Playlist with id
   router.delete("/playlist/:id", playlist.deletePlaylist);
 
