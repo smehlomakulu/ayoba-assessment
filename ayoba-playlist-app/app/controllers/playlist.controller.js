@@ -1,6 +1,8 @@
-const Track = require("../models/track.model").Track;
-const Playlist = require("../models/playlist.model").Playlist;
+const db = require('../models/index.js');
+const Track = db['track']; //require("../models/track.model").Track;
+const Playlist = db['playlist']; // require("../models/playlist.model").Playlist;
 const TrackPlaylist = require("../models/playlist.model").TrackPlaylist;
+
 
 module.exports = {
 
