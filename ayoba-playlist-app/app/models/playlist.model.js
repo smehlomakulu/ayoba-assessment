@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-  const Playlist = sequelize.define("playlist", {
+  const Playlist = sequelize.define("Playlist", {
     title: {
       type: Sequelize.STRING
     },
